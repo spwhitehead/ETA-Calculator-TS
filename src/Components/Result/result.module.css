@@ -1,0 +1,8 @@
+.result {
+    grid-area: span 2;
+    text-align: center;
+}
+.etaOutput {
+    max-width: 300px;
+    min-width: 100px;
+}

@@ -1,8 +1,23 @@
-.container {
+.layout {
     display: grid;
-    grid-template-columns: 5% 1fr 1fr 5%;
-    grid-template-rows: 5% 1fr 1fr 5%;
-    grid-gap: 10px 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, min-content);
+    grid-gap: 10px;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+}
+
+.heading {
+    margin: 10px;
+    grid-area: 1 / span 2;
+    text-align: center;
+}
+
+.submitBtn {
+    grid-area: 3 / span 2;
+}
+
+.container {
+    border: 2px solid black;
 }

@@ -1,4 +1,4 @@
-import './App.css'
+import './App.module.css'
 import Dashboard from "../Dashboard/Dashboard";
 
 export default function App() {
