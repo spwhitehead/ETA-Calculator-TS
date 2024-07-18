@@ -6,7 +6,7 @@ export default function App() {
   return (
     <>
       <header>
-        <h1>TypeScript ETA Calculator</h1>
+        <h1>ETA Calculator</h1>
       </header>
       <div className="App">
         <Dashboard />
