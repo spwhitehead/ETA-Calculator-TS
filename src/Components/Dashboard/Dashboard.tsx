@@ -32,7 +32,7 @@ const Dashboard: React.FC = () => {
     return (
         <main className={styles.container}>
             <div className={styles.layout}>
-                <h2 className={styles.heading}>Dashboard</h2>
+                <h1 className={styles.heading}>ETA Calculator</h1>
                     <form className={styles.formFields}>
                         <Destination 
                             destination={state.destination}
