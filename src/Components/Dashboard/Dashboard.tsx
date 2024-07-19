@@ -13,21 +13,22 @@ const Dashboard: React.FC = () => {
 
     const handleSubmit = (): void => {
         const { destination, speed } = state;
-
+        
+        // Make sure the fields are not empty
         if (destination === "" || speed === "") {
             alert("Please enter a value for both destination and speed.");
             return;
         }
 
         // Math for ETA here
-        const destinationValue = parseFloat(destination);
-        const speedValue = parseFloat(speed);
+        const destinationValue: number = parseFloat(destination);
+        const speedValue: number = parseFloat(speed);
+        const eta: number = Math.abs((destinationValue / speedValue));
 
-        const eta = Math.abs((destinationValue / speedValue));
-        console.log(`ETA: ${eta.toFixed(2)} hours`);
+        // Set the ETA (result)
+        console.log(`ETA: ${eta.toFixed(2)} hours`); // Log ETA
         setEta(eta); // Update ETA state
     }
-// Read Article
 
     return (
         <main className={styles.container}>
