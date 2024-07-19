@@ -9,6 +9,11 @@ Visit [www.spencerpwhitehead.com/ETA-Calculator-TS](www.spencerpwhitehead.com/ET
 ### Option B
 To run it locally, fork the repo, then clone it locally.
 
+Install npm: [npm docs](https://docs.npmjs.com/cli/v10/commands/npm-install)
+```bash
+npm install
+```
+
 Run the following in the root directory to be able to view your changes live. 
 ```typescript 
 npm run dev
